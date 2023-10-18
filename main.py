@@ -1,16 +1,14 @@
-# Recursive function to calculate factorial
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n - 1)
+class Player:
+    def play(self):
+        print("The player is playing cricket.")
+class Batsman( Player):
+    def play(self):
+        print("The batsman is batting.")
+class Bowler(Player):
+    def play(self):
+        print("The Bowler is bowlinng.")
 
-# Input from the user
-num = int(input("Enter a non-negative integer: "))
-
-# Check if the input is valid
-if num < 0:
-    print("Please enter a non-negative integer.")
-else:
-    result = factorial(num)
-    print(f"{num}! = {result}")
+Batsman = Batsman()
+Bowler = Bowler()
+Batsman.play()
+Bowler.play()
